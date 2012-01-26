@@ -1,0 +1,77 @@
+<?php
+    require_once '../src/BootstrapTwitter/Autoloader.php';
+
+    $span1 = new BootstrapTwitter\UI\Grid\Span();
+    $span1->setSize(1);
+
+    $span2 = new BootstrapTwitter\UI\Grid\Span();
+    $span2->setSize(2);
+
+    $span3 = new BootstrapTwitter\UI\Grid\Span();
+    $span3->setSize(3);
+
+    $span4 = new BootstrapTwitter\UI\Grid\Span();
+    $span4->setSize(4);
+
+    $span5 = new BootstrapTwitter\UI\Grid\Span();
+    $span5->setSize(5);
+
+    $span6 = new BootstrapTwitter\UI\Grid\Span();
+    $span6->setSize(6);
+
+    $span7 = new BootstrapTwitter\UI\Grid\Span();
+    $span7->setSize(7);
+
+    $span8 = new BootstrapTwitter\UI\Grid\Span();
+    $span8->setSize(8);
+
+    $span9 = new BootstrapTwitter\UI\Grid\Span();
+    $span9->setSize(9);
+
+    $span10 = new BootstrapTwitter\UI\Grid\Span();
+    $span10->setSize(10);
+
+    $span11 = new BootstrapTwitter\UI\Grid\Span();
+    $span11->setSize(11);
+
+    $span12 = new BootstrapTwitter\UI\Grid\Span();
+    $span12->setSize(12);
+
+    $span13 = new BootstrapTwitter\UI\Grid\Span();
+    $span13->setSize(13);
+
+    $span14 = new BootstrapTwitter\UI\Grid\Span();
+    $span14->setSize(14);
+
+    $span15 = new BootstrapTwitter\UI\Grid\Span();
+    $span15->setSize(15);
+
+    $span16 = new BootstrapTwitter\UI\Grid\Span();
+    $span16->setSize(16);
+
+    $span1_3 = new BootstrapTwitter\UI\Grid\Span();
+    $span1_3->setSize('1/3');
+
+    $span2_3 = new BootstrapTwitter\UI\Grid\Span();
+    $span2_3->setSize('2/3');
+
+    $row1 = new BootstrapTwitter\UI\Grid\Row();
+    $row1->addSpan($span1)
+        ->addSpan($span2)
+        ->addSpan($span3)
+        ->addSpan($span10);
+
+    $row2 = new BootstrapTwitter\UI\Grid\Row();
+    $row2->addSpan($span2_3)
+        ->addSpan($span1_3);
+
+    $row3 = new BootstrapTwitter\UI\Grid\Row();
+    $row3->addSpan($span16);
+
+    $grid = new BootstrapTwitter\UI\Grid();
+    $grid->addRow($row1)
+        ->addRow($row2)
+        ->addRow($row3);
+
+    echo $grid;
+?>
