@@ -15,7 +15,7 @@ class Pre extends Element
     public function __construct($innerHtml='')
     {
         $this->_setName('pre')
-            ->setInnerHtml($innerHtml);
+            ->setInnerHtml(htmlspecialchars($innerHtml));
     }
 
     public function getPrettyprint()

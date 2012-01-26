@@ -5,12 +5,17 @@
  */
 
 namespace BootstrapTwitter\Html;
+use BootstrapTwitter\Html\Element\Collection;
 /**
  * @package BootstrapTwitter
  * @subpackage BootstrapTwitter_Html
  */
 abstract class Element
 {
+
+    /**@global */
+    const TAB = '    ';
+
     /** @var string */
     protected $_output = '';
 
@@ -46,14 +51,15 @@ abstract class Element
     {
         $name = $this->_getName();
         $classes = trim($this->_getClassesAsString());
-        $classes = empty($classes) ? '' : 'class="' . $classes . '"';
-        $attributes = $this->_getAttributesAsString();
+        $classes = empty($classes) ? '' : ' class="' . $classes . '"';
+        $attributes = trim($this->_getAttributesAsString());
+        $attributes = empty($attributes) ? '' : ' ' . $this->_getAttributesAsString();
         $innerHtml = $this->_getInnerHtml();
 
         if (empty($innerHtml)) {
-            $this->_output = "<$name $classes $attributes/>" . PHP_EOL;
+            $this->_output = "<$name$classes$attributes/>" . PHP_EOL;
         } else {
-            $this->_output = "<$name $classes $attributes>$innerHtml</$name>" . PHP_EOL;
+            $this->_output = "<$name$classes$attributes>$innerHtml</$name>" . PHP_EOL;
         }
         return $this->_output;
     }
@@ -66,14 +72,26 @@ abstract class Element
 
     public function setInnerHtml($html)
     {
+        $this->_innerHtml = '';
+        $html = $this->_prepareInnerHtml($html);
         $this->_innerHtml = $html;
         return $this;
     }
 
     public function addInnerHtml($html)
     {
+        $html = $this->_prepareInnerHtml($html);
         $this->_innerHtml .= $html;
         return $this;
+    }
+
+    protected function _prepareInnerHtml($html)
+    {
+        if ($html instanceof Element || $html instanceof Collection) {
+            $space = empty($this->_innerHtml) ? PHP_EOL : '';
+            $html = $space . self::TAB . $html;
+        }
+        return $html;
     }
 
     /**

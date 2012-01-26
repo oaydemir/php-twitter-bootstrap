@@ -28,7 +28,7 @@ class Span extends Element
     public function setSize($span)
     {
         if ($span === '1/3') {
-            $span = '-one-thirds';
+            $span = '-one-third';
         } elseif ($span === '2/3') {
             $span = '-two-thirds';
         } else {

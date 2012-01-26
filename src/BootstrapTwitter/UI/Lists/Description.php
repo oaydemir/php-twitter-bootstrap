@@ -24,7 +24,7 @@ class Description extends ListAbstract
         if ($head) {
             $element = 'dt';
         }
-        $itemElement = new Custom(array($element));
+        $itemElement = new Custom(array('name'=>$element));
         return $itemElement->setInnerHtml($item);
     }
 }

@@ -17,13 +17,15 @@ class Button extends Element
 {
     public function __construct($config=array())
     {
-        $this->_setName('input');
+        $this->_setName('input')
+            ->addClasses('btn');
         $type = empty($config['type']) ? 'button' : $config['type'];
         $this->setType($type);
-        $value = empty($config['type']) ? 'Button' : $config['value'];
+        $value = empty($config['value']) ? 'Button' : $config['value'];
         $this->setValue($value);
-        $class = empty($config['color_type']) ? 'Button' : $config['color_type'];
-        $this->setColorType($class);
+        if(!empty($config['color_type'])) {
+            $this->setColorType($config['color_type']);
+        }
     }
 
     public function setColorType($class)

@@ -55,9 +55,9 @@ class Collection implements \Countable, \IteratorAggregate
      */
     public function __toString()
     {
-        $this->_output = $this->_prefix . PHP_EOL;
+        $this->_output = empty($this->_prefix) ? '' : $this->_prefix . PHP_EOL;
         foreach($this->_elements as $element) {
-            $this->_output .= (string)$element . PHP_EOL;
+            $this->_output .= (string)$element;
         }
         $this->_output .= empty($this->_suffix) ? '' : $this->_suffix . PHP_EOL;
         return $this->_output;

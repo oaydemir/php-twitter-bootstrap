@@ -20,7 +20,7 @@ class Ordered extends ListAbstract
 
     protected function _itemDecorator($item, $head)
     {
-        $itemElement = new Custom(array('li'));
+        $itemElement = new Custom(array('name'=>'li'));
         return $itemElement->setInnerHtml($item);
     }
 }
