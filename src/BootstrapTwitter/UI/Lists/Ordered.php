@@ -6,7 +6,7 @@
 
 namespace BootstrapTwitter\UI\Lists;
 use BootstrapTwitter\UI\Custom;
-/*
+/**
  * @package BootstrapTwitter
  * @subpackage BootstrapTwitter_UI
  */

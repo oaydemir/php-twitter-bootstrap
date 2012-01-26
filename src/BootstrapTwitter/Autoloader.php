@@ -4,7 +4,7 @@
  * @license http://opensource.org/licenses/gpl-3.0.html GPL
  */
 
-/*
+/**
  * @package BootstrapTwitter
  * @subpackage BootstrapTwitter
  */

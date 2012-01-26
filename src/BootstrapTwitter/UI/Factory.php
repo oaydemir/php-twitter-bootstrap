@@ -5,7 +5,7 @@
  */
 
 namespace BootstrapTwitter\UI;
-/*
+/**
  * @package BootstrapTwitter
  * @subpackage BootstrapTwitter_UI
  */

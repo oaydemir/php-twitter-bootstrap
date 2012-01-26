@@ -6,7 +6,7 @@
 
 namespace BootstrapTwitter\UI\Lists;
 use BootstrapTwitter\Html\Element\Collection;
-/*
+/**
  * @package BootstrapTwitter
  * @subpackage BootstrapTwitter_UI
  */

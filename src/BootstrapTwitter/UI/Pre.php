@@ -10,18 +10,18 @@ use BootstrapTwitter\Html\Element;
  * @package BootstrapTwitter
  * @subpackage BootstrapTwitter_UI
  */
-class Custom extends Element
+class Pre extends Element
 {
-    public function __construct($config=array())
+    public function __construct($innerHtml='')
     {
-        if (!empty($config['name'])) {
-            $this->setName($config['name']);
-        }
+        $this->_setName('pre')
+            ->setInnerHtml($innerHtml);
     }
 
-    public function setName($name)
+    public function getPrettyprint()
     {
-        $this->_setName($name);
+        $this->addClasses('prettyprint');
         return $this;
     }
 }
+

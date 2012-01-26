@@ -6,7 +6,7 @@
 
 namespace BootstrapTwitter\UI\Grid;
 use BootstrapTwitter\Html\Element;
-/*
+/**
  * @package BootstrapTwitter
  * @subpackage BootstrapTwitter_UI
  */

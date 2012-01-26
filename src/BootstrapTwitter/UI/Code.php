@@ -10,18 +10,12 @@ use BootstrapTwitter\Html\Element;
  * @package BootstrapTwitter
  * @subpackage BootstrapTwitter_UI
  */
-class Custom extends Element
+class Code extends Element
 {
-    public function __construct($config=array())
+    public function __construct($innerHtml='')
     {
-        if (!empty($config['name'])) {
-            $this->setName($config['name']);
-        }
-    }
-
-    public function setName($name)
-    {
-        $this->_setName($name);
-        return $this;
+        $this->_setName('code')
+            ->addInnerHtml($innerHtml);
     }
 }
+

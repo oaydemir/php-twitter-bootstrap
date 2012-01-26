@@ -5,7 +5,7 @@
  */
 
 namespace BootstrapTwitter\Html;
-/*
+/**
  * @package BootstrapTwitter
  * @subpackage BootstrapTwitter_Html
  */

@@ -5,7 +5,7 @@
  */
 
 namespace BootstrapTwitter\Exception;
-/*
+/**
  * @package BootstrapTwitter
  * @subpackage BootstrapTwitter_Exception
  */

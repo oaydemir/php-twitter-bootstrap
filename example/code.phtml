@@ -1,0 +1,12 @@
+<?php
+    require_once '../src/BootstrapTwitter/Autoloader.php';
+
+    $pre = new \BootstrapTwitter\UI\Pre();
+    echo $pre->addInnerHtml('test simple pre');
+    echo $pre->addInnerHtml('test prettyprint pre')->getPrettyprint();
+    echo new \BootstrapTwitter\UI\Pre('test pre from construct');
+
+    echo new \BootstrapTwitter\UI\Code('test code from construct');
+    $code = new \BootstrapTwitter\UI\Code();
+    echo $code->addInnerHtml('test code from construct');
+?>

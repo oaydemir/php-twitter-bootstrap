@@ -6,17 +6,21 @@
 
 namespace BootstrapTwitter\UI;
 use BootstrapTwitter\Html\Element;
-/*
+/**
  * @package BootstrapTwitter
  * @subpackage BootstrapTwitter_UI
+ * @method Button setValue() setValue(\string $value)
+ * @method Button setType() setType(\string $type)
  */
 class Button extends Element
 {
-    public function __construct()
+    public function __construct($config=array())
     {
-        $this->_setName('input')
-            ->setAttribute('type', 'button')
-            ->setAttribute('value', 'Button');
+        $this->_setName('input');
+        $type = empty($config['type']) ? 'button' : $config['type'];
+        $this->setType($type);
+        $value = empty($config['type']) ? 'Button' : $config['value'];
+        $this->setValue($value);
     }
 
     public function getPrimary()

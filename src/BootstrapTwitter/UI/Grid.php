@@ -7,7 +7,7 @@
 namespace BootstrapTwitter\UI;
 use BootstrapTwitter\Html\Element\Collection;
 use BootstrapTwitter\UI\Grid\Row;
-/*
+/**
  * @package BootstrapTwitter
  * @subpackage BootstrapTwitter_UI
  */

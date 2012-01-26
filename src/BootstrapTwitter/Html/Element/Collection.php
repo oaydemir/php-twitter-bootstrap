@@ -6,7 +6,7 @@
 
 namespace BootstrapTwitter\Html\Element;
 use BootstrapTwitter\Html\Element;
-/*
+/**
  * @package BootstrapTwitter
  * @subpackage BootstrapTwitter_Html
  */
