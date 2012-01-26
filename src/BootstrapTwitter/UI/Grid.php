@@ -7,8 +7,8 @@
 namespace BootstrapTwitter\UI;
 use BootstrapTwitter\Html\Element\Collection;
 /*
- * @package Grid
- * @subpackage Grid
+ * @package BootstrapTwitter
+ * @subpackage BootstrapTwitter_UI
  */
 class Grid extends Collection
 {

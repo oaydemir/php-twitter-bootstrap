@@ -7,7 +7,7 @@
 namespace BootstrapTwitter\Html;
 /*
  * @package BootstrapTwitter
- * @subpackage BootstrapTwitter_UI
+ * @subpackage BootstrapTwitter_Html
  */
 abstract class Element
 {
@@ -64,13 +64,13 @@ abstract class Element
         return $this;
     }
 
-    protected function setInnerHtml($html)
+    public function setInnerHtml($html)
     {
         $this->_innerHtml = $html;
         return $this;
     }
 
-    protected function addInnerHtml($html)
+    public function addInnerHtml($html)
     {
         $this->_innerHtml .= $html;
         return $this;

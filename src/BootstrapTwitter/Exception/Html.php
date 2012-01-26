@@ -6,8 +6,8 @@
 
 namespace BootstrapTwitter\Exception;
 /*
- * @package Exception
- * @subpackage Exception
+ * @package BootstrapTwitter
+ * @subpackage BootstrapTwitter_Exception
  */
 class Html extends \Exception
 {

@@ -7,8 +7,8 @@
 namespace BootstrapTwitter\Html\Element;
 use BootstrapTwitter\Html\Element;
 /*
- * @package Collection
- * @subpackage Collection
+ * @package BootstrapTwitter
+ * @subpackage BootstrapTwitter_Html
  */
 class Collection implements \Countable, \IteratorAggregate
 {
