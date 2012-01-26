@@ -129,6 +129,7 @@ abstract class Element
         if (preg_match('/^set(.*)$/', $name, $data) && count($arguments)==1) {
             return $this->setAttribute(strtolower($data[1]), $arguments[0]);
         }
+        return null;
     }
 
     public function setAttribute($name, $value)
