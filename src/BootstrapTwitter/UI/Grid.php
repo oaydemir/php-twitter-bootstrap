@@ -6,13 +6,14 @@
 
 namespace BootstrapTwitter\UI;
 use BootstrapTwitter\Html\Element\Collection;
+use BootstrapTwitter\UI\Grid\Row;
 /*
  * @package BootstrapTwitter
  * @subpackage BootstrapTwitter_UI
  */
 class Grid extends Collection
 {
-    public function addRow(\BootstrapTwitter\UI\Grid\Row $row)
+    public function addRow(Row $row)
     {
         $this->addElement($row);
         return $this;

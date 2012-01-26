@@ -51,9 +51,9 @@ abstract class Element
         $innerHtml = $this->_getInnerHtml();
 
         if (empty($innerHtml)) {
-            $this->_output = PHP_EOL . "<$name $classes $attributes/>" . PHP_EOL;
+            $this->_output = "<$name $classes $attributes/>" . PHP_EOL;
         } else {
-            $this->_output = PHP_EOL . "<$name $classes $attributes>$innerHtml</$name>" . PHP_EOL;
+            $this->_output = "<$name $classes $attributes>$innerHtml</$name>" . PHP_EOL;
         }
         return $this->_output;
     }
