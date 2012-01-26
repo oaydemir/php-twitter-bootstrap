@@ -3,5 +3,8 @@
 
     $button = new \BootstrapTwitter\UI\Button();
     echo $button;
-    echo $button->getPrimary()->setValue('Primary Button');
+    echo $button->setValue('Primary Button')->setColorType('primary');
+    echo $button->setValue('Primary Button')->setColorType('info');
+    echo $button->setValue('Primary Button')->setColorType('success');
+    echo $button->setValue('Primary Button')->setColorType('danger');
 ?>

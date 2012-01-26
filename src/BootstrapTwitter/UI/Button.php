@@ -11,6 +11,7 @@ use BootstrapTwitter\Html\Element;
  * @subpackage BootstrapTwitter_UI
  * @method Button setValue() setValue(\string $value)
  * @method Button setType() setType(\string $type)
+ * @method Button setColorType() setColorType(\string $class)
  */
 class Button extends Element
 {
@@ -21,11 +22,13 @@ class Button extends Element
         $this->setType($type);
         $value = empty($config['type']) ? 'Button' : $config['value'];
         $this->setValue($value);
+        $class = empty($config['color_type']) ? 'Button' : $config['color_type'];
+        $this->setColorType($class);
     }
 
-    public function getPrimary()
+    public function setColorType($class)
     {
-        $this->addClasses('primary');
+        $this->addClasses($class);
         return $this;
     }
 }
